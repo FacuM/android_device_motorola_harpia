@@ -21,7 +21,22 @@ TARGET_SCREEN_HEIGHT := 1280
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := harpia
-PRODUCT_NAME := lineage_harpia
+PRODUCT_NAME := omni_harpia
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := harpia
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="Moto G Play (4th gen)"
+
+PRODUCT_PACKAGES += \
+	librmnetctl \
+	libxml2
+
+# It's not the size but, welp
+TARGET_BOOTANIMATION_SIZE := 480x320
+
+# This adds Dev Tools in Developer settings
+TARGET_LOW_RAM_DEVICE := true
+# WITH_SU := true
+

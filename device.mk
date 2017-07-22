@@ -35,9 +35,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
+# Copy the qcril.db file from qcril to system. Useful to get the radio tech family for the camped operator
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/qcril.db:system/etc/ril/qcril.db
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.target.rc
+
+# Extra Packages
+PRODUCT_PACKAGES += \
+SnapdragonCamera
