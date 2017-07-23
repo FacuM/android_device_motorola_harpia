@@ -34,6 +34,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_harpia
 
 # Kernel
 TARGET_KERNEL_CONFIG := harpia_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216     # 16384 * 1024 mmcblk0p31
@@ -56,4 +57,4 @@ TARGET_QCOM_AUDIO_VARIANT := caf-msm8916
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8916
 TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8916
 
-TW_THEME := portrait_xhdpi
+#TW_THEME := portrait_xhdpi

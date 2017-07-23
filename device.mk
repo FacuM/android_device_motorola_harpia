@@ -17,6 +17,11 @@
 # Inherit from msm8916-common
 $(call inherit-product, device/motorola/msm8916-common/msm8916.mk)
 
+# Display
+
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+
 # Screen density
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
@@ -36,8 +41,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 # Copy the qcril.db file from qcril to system. Useful to get the radio tech family for the camped operator
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/qcril.db:system/etc/ril/qcril.db
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/qcril.db:system/etc/ril/qcril.db
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
