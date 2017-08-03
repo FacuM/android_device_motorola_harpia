@@ -1,2 +1,2 @@
-add_lunch_combo omni_harpia-userdebug
-add_lunch_combo omni_harpia-eng
+add_lunch_combo carbon_harpia-userdebug
+add_lunch_combo carbon_harpia-eng
