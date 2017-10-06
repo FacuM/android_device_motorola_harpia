@@ -42,3 +42,6 @@ TARGET_POWERHAL_HEADER_PATH := $(DEVICE_PATH)/power
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+# Recovery
+TW_THEME := portrait_hdpi

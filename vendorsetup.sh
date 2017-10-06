@@ -1,0 +1,2 @@
+add_lunch_combo pac_harpia-userdebug
+add_lunch_combo pac_harpia-eng
